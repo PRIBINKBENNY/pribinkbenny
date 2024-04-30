@@ -656,39 +656,25 @@ canvas {
 }
 
 /*-----------------------[ 5.Dark Light Mode CSS ]------------------------*/
-.ul-header {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    position: fixed;
-    right: 40px;
-    top: 40px;
-    z-index: 80;
-}
-
-.ul-header a {
-    font-size: 30px;
+.icon-container .icon {
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.3s;
 }
 
-.icon-container {
-    position: relative;
-    width: 24px;
-    height: 24px;
+.icon-container .hidden {
+    display: none;
 }
 
-.icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: opacity 0.8s ease;
-    color: var(--button-color-hover);
+/* Dark mode styles (default) */
+body {
+    background-color: #333;
+    color: #FFF;
 }
 
-.icon.hidden {
-    opacity: 0;
+/* Light mode styles */
+body.light-mode {
+    background-color: #FFF;
+    color: #333;
 }
 
 /*-----------------------[ 6.Fix Icon Menu CSS ]------------------------*/
